@@ -9,6 +9,7 @@ import PromoBanner from "./components/PromoBanner";
 import SugarSenseAIFeatures from "./components/Features";
 import SugarSenseAITargets from "./components/Targets";
 import { MessageCircle } from "lucide-react";
+import Roadmap from "./components/Roadmap";
 
 export default function Home() {
   const [isChatOpen, setIsChatOpen] = useState(false)
@@ -41,9 +42,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative flex flex-col items-center justify-center py-16 px-6 sm:px-12 lg:px-24">
+      <section className="py-16 px-6 sm:px-12 lg:px-24">
         <SugarSenseAITargets />
         <SugarSenseAIFeatures />
+        <Roadmap/>
         <PromoBanner />
         <button onClick={() => setIsChatOpen(!isChatOpen)} className="fixed bottom-8 right-8 bg-[#40b3d3] hover:bg-[#31859c] p-4 rounded-full shadow-lg transition-transform transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#235462]">
           <MessageCircle className="w-6 h-6 text-white" />
