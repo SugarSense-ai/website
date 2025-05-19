@@ -5,7 +5,8 @@ import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ChatBox from "./components/ChatBox";
-import PromoBanner from "./components/PromoBanner";
+import Transform from "./components/Transform";
+// import PromoBanner from "./components/PromoBanner";
 import SugarSenseAIFeatures from "./components/Features";
 import SugarSenseAITargets from "./components/Targets";
 import { MessageCircle } from "lucide-react";
@@ -46,7 +47,8 @@ export default function Home() {
         <SugarSenseAITargets />
         <SugarSenseAIFeatures />
         <Roadmap/>
-        <PromoBanner />
+        {/* <PromoBanner /> */}
+        <Transform />
         <button onClick={() => setIsChatOpen(!isChatOpen)} className="fixed bottom-8 right-8 bg-[#40b3d3] hover:bg-[#31859c] p-4 rounded-full shadow-lg transition-transform transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#235462]">
           <MessageCircle className="w-6 h-6 text-white" />
         </button>

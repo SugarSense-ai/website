@@ -29,11 +29,13 @@ const Card: React.FC<CardProps> = ({
       w-100 h-96 flex flex-col ${isActive ? "scale-100" : "scale-95"} hover:scale-100`}
       onClick={onClick}
     >
-      <img
-        src={imageUrl}
-        alt={title}
-        className="rounded-lg object-cover w-full h-40 mb-4"
-      />
+      <div className="relative w-full h-48 mb-4 overflow-hidden rounded-lg">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="absolute inset-0 w-full h-full object-contain"
+        />
+      </div>
       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
         {title}
       </h3>

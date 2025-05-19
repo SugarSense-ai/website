@@ -18,8 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={inter.className}>
+        <div className="animated-bg" />
+        <main className="relative z-10">
           {children}
+        </main>
         <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
